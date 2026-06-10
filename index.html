@@ -202,19 +202,6 @@
     text-align: center;
   }
 
-  /* CITATION SUPERSCRIPT */
-  .citation {
-    font-size: 0.7rem;
-    vertical-align: super;
-    color: var(--gold);
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  .citation:hover {
-    color: var(--accent);
-  }
-
   /* SNAPSHOT GRID */
   .snapshot-grid {
     display: grid;
@@ -450,7 +437,7 @@
   <a href="#" onclick="showPage('citations')" id="nav-citations">Works Cited</a>
 </nav>
 
-<!-- ═══════════════════════════════ SNAPSHOT ════════════════════════════════ -->
+<!-- ═══════════════════════════════ SNAPSHOT ═════════════════════════════════ -->
 <div class="page active page-bg-blue" id="page-snapshot">
   <div class="hero">
     <div class="hero-flag">🇫🇮</div>
@@ -464,22 +451,22 @@
     <h2 class="section-title">Country <span>Snapshot</span></h2>
     <div class="section-line"></div>
 
-    <img src="https://images.unsplash.com/photo-1552664782-8ac5e0b0b38e?w=1200&h=300&fit=crop" alt="Helsinki Cathedral & Architecture" class="section-image">
+    <img src="https://picsum.photos/1200/300?random=1" alt="Helsinki Waterfront" class="section-image">
 
     <div class="snapshot-grid">
       <div class="snap-card">
         <div class="snap-label">Population</div>
-        <div class="snap-value">5.6 Million<span class="citation" onclick="showPage('citations')">[11]</span></div>
+        <div class="snap-value">5.6 Million</div>
         <div class="snap-sub">Est. 2024</div>
       </div>
       <div class="snap-card">
         <div class="snap-label">Life Expectancy</div>
-        <div class="snap-value">82.3 Years<span class="citation" onclick="showPage('citations')">[13]</span></div>
+        <div class="snap-value">82.3 Years</div>
         <div class="snap-sub">Among highest in EU</div>
       </div>
       <div class="snap-card">
         <div class="snap-label">GDP per Capita</div>
-        <div class="snap-value">~$55,000 USD<span class="citation" onclick="showPage('citations')">[2]</span></div>
+        <div class="snap-value">~$55,000 USD</div>
         <div class="snap-sub">High-income nation</div>
       </div>
       <div class="snap-card">
@@ -505,11 +492,11 @@
       <div class="snap-card">
         <div class="snap-label">Government</div>
         <div class="snap-value">Parliamentary Republic</div>
-        <div class="snap-sub">200-seat unicameral parliament<span class="citation" onclick="showPage('citations')">[2]</span></div>
+        <div class="snap-sub">200-seat unicameral parliament (Eduskunta)</div>
       </div>
       <div class="snap-card">
         <div class="snap-label">Capital</div>
-        <div class="snap-value">Helsinki<span class="citation" onclick="showPage('citations')">[2]</span></div>
+        <div class="snap-value">Helsinki</div>
         <div class="snap-sub">Pop. ~660,000</div>
       </div>
       <div class="snap-card">
@@ -518,14 +505,14 @@
         <div class="snap-sub">High English proficiency nationwide</div>
       </div>
       <div class="snap-card">
-        <div class="snap-label">NATO Status</div>
-        <div class="snap-value">Member Since 2023<span class="citation" onclick="showPage('citations')">[16]</span></div>
-        <div class="snap-sub">Joined April 2023</div>
+        <div class="snap-label">Time Zones</div>
+        <div class="snap-value">1 (EET)</div>
+        <div class="snap-sub">Single unified time zone</div>
       </div>
       <div class="snap-card">
-        <div class="snap-label">EU Membership</div>
-        <div class="snap-value">Since 1995<span class="citation" onclick="showPage('citations')">[16]</span></div>
-        <div class="snap-sub">Full EU member state</div>
+        <div class="snap-label">Number of Time Zones</div>
+        <div class="snap-value">1</div>
+        <div class="snap-sub">vs. Canada's 6 time zones</div>
       </div>
     </div>
 
@@ -537,10 +524,10 @@
           <li>Average winter temperatures: −15°C to −5°C</li>
           <li>Summers mild: 15°C to 25°C (June–August)</li>
           <li>Northern Finland (Lapland) experiences Polar Night in winter</li>
-          <li>Midnight Sun phenomenon in summer above Arctic Circle<span class="citation" onclick="showPage('citations')">[2]</span></li>
+          <li>Midnight Sun phenomenon in summer above Arctic Circle</li>
           <li>Heavy snowfall in most regions November–March</li>
         </ul>
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=250&fit=crop" alt="Finnish Winter Landscape with Snow" class="section-image" style="margin-top: 1rem; margin-bottom: 0;">
+        <img src="https://picsum.photos/600/250?random=2" alt="Finnish Winter Landscape" class="section-image" style="margin-top: 1rem; margin-bottom: 0;">
       </div>
       <div class="wide-card">
         <h3>Government Structure</h3>
@@ -548,10 +535,10 @@
           <li>Parliamentary republic — head of state is President</li>
           <li>President: Alexander Stubb (elected 2024)</li>
           <li>Prime Minister leads day-to-day government</li>
-          <li>200-seat unicameral parliament (Eduskunta)<span class="citation" onclick="showPage('citations')">[2]</span></li>
+          <li>200-seat unicameral parliament (Eduskunta)</li>
           <li>Multi-party coalition system</li>
-          <li>Member of European Union since 1995<span class="citation" onclick="showPage('citations')">[16]</span></li>
-          <li>Joined NATO in April 2023<span class="citation" onclick="showPage('citations')">[16]</span></li>
+          <li>Member of European Union since 1995</li>
+          <li>Joined NATO in April 2023</li>
         </ul>
       </div>
     </div>
@@ -560,18 +547,18 @@
       <div class="wide-card">
         <h3>Popular Product: Nokia & Tech Innovation</h3>
         <ul>
-          <li>Nokia — global telecommunications giant, founded in Finland (1865)<span class="citation" onclick="showPage('citations')">[1]</span></li>
+          <li>Nokia — global telecommunications giant, founded in Finland (1865)</li>
           <li>Rovio Entertainment — creator of Angry Birds franchise</li>
           <li>Finnish-made icebreakers dominate Arctic shipping</li>
           <li>Fiskars scissors & garden tools — iconic Finnish brand</li>
-          <li>Fazer chocolate — premium Finnish confectionery export<span class="citation" onclick="showPage('citations')">[5]</span></li>
+          <li>Fazer chocolate — premium Finnish confectionery export</li>
           <li>Finnish-made saunas — exported globally as cultural products</li>
         </ul>
       </div>
       <div class="wide-card">
         <h3>Post-Secondary Institutions</h3>
         <ul>
-          <li>University of Helsinki — ranked top 100 globally<span class="citation" onclick="showPage('citations')">[14]</span></li>
+          <li>University of Helsinki — ranked top 100 globally</li>
           <li>Aalto University — world-class design & technology</li>
           <li>Tampere University — engineering & technology focus</li>
           <li>University of Turku — research-intensive</li>
@@ -585,9 +572,9 @@
     <div class="wide-card" style="margin-top:0;">
       <h3>Map & Region</h3>
       <div class="map-placeholder">
-        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=200&fit=crop" alt="Nordic Region Map" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
-        <strong style="margin-top: 1rem; display: block;">Northern Europe — Nordic Region</strong>
-        <p>Finland borders Sweden (west), Norway (north), Russia (east), and the Gulf of Finland (south).<br>Area: 338,000 km² — roughly 3× the size of Ontario's southern region.<span class="citation" onclick="showPage('citations')">[2]</span></p>
+        <img src="https://picsum.photos/600/200?random=3" alt="Nordic Map Region" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+        <strong style="margin-top: 1rem; display: block;">Northern Europe — Scandinavia</strong>
+        <p>Finland borders Sweden (west), Norway (north), Russia (east), and the Gulf of Finland (south).<br>Area: 338,000 km² — roughly 3× the size of Ontario's southern region.</p>
       </div>
     </div>
   </div>
@@ -601,20 +588,20 @@
     <div class="section-line"></div>
     <p class="section-intro">Key business considerations for Canadian exporters entering the Finnish market.</p>
 
-    <img src="https://images.unsplash.com/photo-1553531088-f352591f5e0f?w=1200&h=300&fit=crop" alt="Modern Office Workspace with Innovation" class="section-image">
+    <img src="https://picsum.photos/1200/300?random=4" alt="Modern Business Environment" class="section-image">
 
     <div class="wide-card">
       <h3>Advantages of Doing Business in Finland</h3>
       <ul>
-        <li><strong>Competitive Advantage:</strong> Ranked among top 10 most competitive economies globally<span class="citation" onclick="showPage('citations')">[14]</span></li>
+        <li><strong>Competitive Advantage:</strong> Ranked among top 10 most competitive economies globally (WEF 2023)</li>
         <li><strong>Absolute Advantage:</strong> World-leading expertise in ICT, clean tech, and forestry industries</li>
         <li><strong>Comparative Advantage:</strong> Specialized production of telecom technology, paper/pulp, and shipbuilding (esp. icebreakers)</li>
         <li>High English proficiency — ease of conducting business negotiations</li>
         <li>Stable political environment and strong rule of law</li>
-        <li>EU membership provides access to a market of 450+ million consumers<span class="citation" onclick="showPage('citations')">[4]</span></li>
+        <li>EU membership provides access to a market of 450+ million consumers</li>
         <li>Strong digital infrastructure — one of the world's most digitized economies</li>
-        <li>Transparent, low-corruption business environment<span class="citation" onclick="showPage('citations')">[12]</span></li>
-        <li>Highly educated, skilled workforce</li>
+        <li>Transparent, low-corruption business environment (Transparency International top 5)</li>
+        <li>Highly educated, skilled workforce (PISA top rankings in education)</li>
         <li>Excellent logistics networks and proximity to Russian/Baltic markets (strategic location)</li>
       </ul>
     </div>
@@ -622,27 +609,27 @@
     <div class="wide-card">
       <h3>Unique Resources &amp; Specializations</h3>
       <ul>
-        <li>World's largest producer and exporter of Nordic softwood pulp and paper<span class="citation" onclick="showPage('citations')">[10]</span></li>
+        <li>World's largest producer and exporter of Nordic softwood pulp and paper</li>
         <li>Significant deposits of nickel, cobalt, chromite — critical for EV batteries</li>
         <li>Largest freshwater reserves in Europe (188,000+ lakes)</li>
         <li>World leader in icebreaker ship design and construction</li>
         <li>Globally recognized sauna culture — exported as a lifestyle product</li>
-        <li>Leading Nordic game development industry</li>
-        <li>Outokumpu produces high-quality stainless steel</li>
+        <li>Leading Nordic game development industry (Rovio, Supercell, Remedy)</li>
+        <li>Finland's Outokumpu produces the highest-quality stainless steel in the world</li>
       </ul>
     </div>
 
     <div class="image-grid">
       <div class="image-card">
-        <img src="https://images.unsplash.com/photo-1581092191956-8155fe634e69?w=400&h=200&fit=crop" alt="Forestry & Paper Production Mill">
+        <img src="https://picsum.photos/400/200?random=5" alt="Forestry & Pulp Industry">
         <div class="image-caption">Forestry & Pulp Industry</div>
       </div>
       <div class="image-card">
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=200&fit=crop" alt="Technology Business Development">
+        <img src="https://picsum.photos/400/200?random=6" alt="Tech Innovation">
         <div class="image-caption">Tech Innovation Hub</div>
       </div>
       <div class="image-card">
-        <img src="https://images.unsplash.com/photo-1509452773172-e8bb8ba8eee5?w=400&h=200&fit=crop" alt="Wind Farm Renewable Energy">
+        <img src="https://picsum.photos/400/200?random=7" alt="Renewable Energy">
         <div class="image-caption">Clean Energy Focus</div>
       </div>
     </div>
@@ -652,27 +639,27 @@
       <ul>
         <li>High cost of living and wages — increases operational costs</li>
         <li>Strong domestic competition in tech, forestry, and manufacturing</li>
-        <li>Highly regulated market — EU compliance requirements for all imports<span class="citation" onclick="showPage('citations')">[4]</span></li>
+        <li>Highly regulated market — EU compliance requirements for all imports</li>
         <li>Strict environmental regulations and sustainability standards</li>
         <li>Language barrier outside major cities (Finnish is very difficult to learn)</li>
-        <li>Small domestic market — limited to ~5.6 million consumers<span class="citation" onclick="showPage('citations')">[11]</span></li>
+        <li>Small domestic market — limited to ~5.6 million consumers</li>
         <li>Heavy taxation on businesses (corporate tax ~20%, high VAT at 24%)</li>
         <li>Seasonal demand fluctuations due to extreme climate differences</li>
-        <li>Complex EU labelling and packaging requirements</li>
+        <li>Complex EU labelling and packaging requirements (see Marketing)</li>
       </ul>
     </div>
   </div>
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ SOCIAL ISSUES ════════════════════════════════ -->
+<!-- ═══════════════════════════════ SOCIAL ISSUES ═══════════════════════════════ -->
 <div class="page page-bg-blue" id="page-social">
   <div class="section">
     <h2 class="section-title">Social <span>Issues</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Ethics and social considerations relevant to Finland's labour and business environment.</p>
 
-    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=300&fit=crop" alt="Workplace Safety Training" class="section-image">
+    <img src="https://picsum.photos/1200/300?random=8" alt="Workplace & Safety" class="section-image">
 
     <div class="three-col">
       <div class="wide-card">
@@ -692,17 +679,17 @@
           <li>Industry-specific agreements cover ~90% of workers</li>
           <li>Average minimum effectively ~€12–14/hr through agreements</li>
           <li>Strong union culture — high union membership (60%+)</li>
-          <li>Generous paid leave: 5 weeks annual vacation<span class="citation" onclick="showPage('citations')">[6]</span></li>
+          <li>Generous paid leave: 5 weeks annual vacation</li>
         </ul>
       </div>
       <div class="wide-card">
         <h3>Health Benefits</h3>
         <ul>
-          <li>Universal publicly funded healthcare for all citizens<span class="citation" onclick="showPage('citations')">[13]</span></li>
+          <li>Universal publicly funded healthcare for all citizens</li>
           <li>Employers required to provide occupational health services</li>
           <li>Parental leave: up to 14 months shared between parents</li>
           <li>Low out-of-pocket health costs for workers</li>
-          <li>High healthcare quality ranking (EU top 5)<span class="citation" onclick="showPage('citations')">[13]</span></li>
+          <li>High healthcare quality ranking (EU top 5)</li>
         </ul>
       </div>
     </div>
@@ -721,8 +708,8 @@
       <div class="wide-card">
         <h3>Equity &amp; Inclusion</h3>
         <ul>
-          <li>Non-Discrimination Act prohibits bias based on origin, religion, gender, age, disability<span class="citation" onclick="showPage('citations')">[6]</span></li>
-          <li>Gender equality deeply embedded — one of world's top gender-equal nations<span class="citation" onclick="showPage('citations')">[14]</span></li>
+          <li>Non-Discrimination Act prohibits bias based on origin, religion, gender, age, disability</li>
+          <li>Gender equality deeply embedded — one of world's top gender-equal nations (WEF)</li>
           <li>Growing concern about integration of immigrant workers</li>
           <li>LGBTQ+ rights protected — same-sex marriage legal since 2017</li>
           <li>Pay equity legislation requires employers to report gender wage gaps</li>
@@ -741,7 +728,7 @@
     <div class="section-line"></div>
     <p class="section-intro">Current trends shaping Finland's economy — and the trade opportunities they create for Canadian businesses.</p>
 
-    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=300&fit=crop" alt="Green Energy Wind Turbines Landscape" class="section-image">
+    <img src="https://picsum.photos/1200/300?random=9" alt="Green Energy & Innovation" class="section-image">
 
     <div class="highlight-box">
       <p>Remember: <strong>Opportunities come from trends.</strong> Each trend below represents a potential entry point for Canadian exporters into the Finnish market.</p>
@@ -750,12 +737,12 @@
     <div class="wide-card">
       <h3>Key Trends in Finland</h3>
       <ul>
-        <li><strong>Green Transition:</strong> Finland committed to carbon neutrality by 2035<span class="citation" onclick="showPage('citations')">[1]</span></li>
+        <li><strong>Green Transition:</strong> Finland committed to carbon neutrality by 2035 — fastest target in the EU</li>
         <li><strong>Digital Economy Growth:</strong> Government investing heavily in AI, 5G, and smart city infrastructure</li>
         <li><strong>Circular Economy:</strong> Strong push toward waste reduction, recycled materials, and sustainable packaging</li>
         <li><strong>Arctic Economy:</strong> Growing interest in Arctic shipping routes, tourism, and resource extraction</li>
         <li><strong>Health Tech:</strong> Aging population driving demand for medical devices, digital health, and eldercare</li>
-        <li><strong>Defence Expansion (post-NATO):</strong> Significantly increased defence spending following NATO accession<span class="citation" onclick="showPage('citations')">[16]</span></li>
+        <li><strong>Defence Expansion (post-NATO):</strong> Significantly increased defence spending following NATO accession in 2023</li>
         <li><strong>Critical Minerals Demand:</strong> Growing EV industry creating demand for cobalt, nickel, and lithium</li>
         <li><strong>Gaming &amp; Entertainment:</strong> Finland's gaming industry growing 15%+ annually</li>
       </ul>
@@ -763,15 +750,15 @@
 
     <div class="image-grid">
       <div class="image-card">
-        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=200&fit=crop" alt="Wind Energy Turbines">
+        <img src="https://picsum.photos/400/200?random=10" alt="Wind Energy">
         <div class="image-caption">Renewable Energy Trends</div>
       </div>
       <div class="image-card">
-        <img src="https://images.unsplash.com/photo-1555255707-c07966dbae4b?w=400&h=200&fit=crop" alt="AI and Machine Learning Technology">
+        <img src="https://picsum.photos/400/200?random=11" alt="AI & Digital">
         <div class="image-caption">AI & Digital Economy</div>
       </div>
       <div class="image-card">
-        <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=400&h=200&fit=crop" alt="Gaming Development Studio">
+        <img src="https://picsum.photos/400/200?random=12" alt="Gaming Industry">
         <div class="image-caption">Gaming & Tech Innovation</div>
       </div>
     </div>
@@ -780,9 +767,9 @@
       <div class="wide-card">
         <h3>Opportunities for Canadian Exporters</h3>
         <ul>
-          <li>Clean energy technology (hydro, wind, hydrogen) — Finland seeking green partners<span class="citation" onclick="showPage('citations')">[1]</span></li>
+          <li>Clean energy technology (hydro, wind, hydrogen) — Finland seeking green partners</li>
           <li>Critical minerals exports — Canada's rich reserves complement Finnish manufacturing</li>
-          <li>Aerospace and defence technology — NATO ally cooperation<span class="citation" onclick="showPage('citations')">[16]</span></li>
+          <li>Aerospace and defence technology — NATO ally cooperation</li>
           <li>AI and cybersecurity solutions — Finland's digital government needs secure tech</li>
           <li>Agri-food exports — premium Canadian products (maple syrup, seafood, grains)</li>
           <li>Educational partnerships — Finland's world-class education system values collaboration</li>
@@ -792,9 +779,9 @@
       <div class="wide-card">
         <h3>Innovation &amp; Investment Climate</h3>
         <ul>
-          <li>Business Finland — national agency actively attracts foreign investment<span class="citation" onclick="showPage('citations')">[1]</span></li>
-          <li>R&amp;D expenditure ~3% of GDP — one of highest in the world<span class="citation" onclick="showPage('citations')">[8]</span></li>
-          <li>Helsinki ranked top 5 in Europe for startup ecosystems</li>
+          <li>Business Finland — national agency actively attracts foreign investment</li>
+          <li>R&amp;D expenditure ~3% of GDP — one of highest in the world</li>
+          <li>Helsinki ranked top 5 in Europe for startup ecosystems (Slush conference)</li>
           <li>Strong IP protection laws favourable to tech exporters</li>
           <li>Special economic zones and tech parks in Helsinki, Tampere, Oulu</li>
           <li>EU Horizon funding accessible through partnerships with Finnish institutions</li>
@@ -812,7 +799,7 @@
     <div class="section-line"></div>
     <p class="section-intro">Understanding Finnish culture is essential for successful business and social relationships.</p>
 
-    <img src="https://images.unsplash.com/photo-1552520514-a89f0f5d78fb?w=1200&h=300&fit=crop" alt="Traditional Finnish Sauna Interior" class="section-image">
+    <img src="https://picsum.photos/1200/300?random=13" alt="Finnish Sauna Culture" class="section-image">
 
     <div class="do-dont-grid" style="margin-bottom: 1.5rem;">
       <div class="wide-card do-card">
@@ -844,11 +831,11 @@
     <div class="wide-card">
       <h3>Cultural Determinants (H, G, R)</h3>
       <ul>
-        <li><strong>History (H):</strong> Finland gained independence from Russia in 1917<span class="citation" onclick="showPage('citations')">[2]</span>; WWII-era conflicts shaped strong national identity</li>
+        <li><strong>History (H):</strong> Finland gained independence from Russia in 1917; WWII-era conflicts ("Winter War" vs Soviet Union) shaped strong national identity and value of independence</li>
         <li><strong>History (H):</strong> Long Swedish rule (1249–1809) left deep cultural and linguistic marks — Swedish is still an official language</li>
         <li><strong>Geography (G):</strong> 75% covered in forests; thousands of lakes — shaped an introverted, nature-loving, self-reliant culture</li>
         <li><strong>Geography (G):</strong> Extreme seasons (Polar Night / Midnight Sun) influence Finnish lifestyle, diet, mental health awareness, and pace of work</li>
-        <li><strong>Religion (R):</strong> ~70% Lutheran Christian<span class="citation" onclick="showPage('citations')">[2]</span>, though religious practice is low — influences values of equality, humility, and community responsibility</li>
+        <li><strong>Religion (R):</strong> ~70% Lutheran Christian, though religious practice is low — influences cultural values of equality, humility, and community responsibility</li>
         <li><strong>Religion (R):</strong> Growing secularism and religious pluralism in urban areas like Helsinki</li>
       </ul>
     </div>
@@ -858,13 +845,13 @@
         <h3>Food Culture</h3>
         <ul>
           <li>Staple foods: rye bread (ruisleipä), salmon, reindeer, potatoes, berries</li>
-          <li>Fazer Blue chocolate — iconic Finnish confectionery loved nationally<span class="citation" onclick="showPage('citations')">[5]</span></li>
+          <li>Fazer Blue chocolate — iconic Finnish confectionery loved nationally</li>
           <li>Salmiakki (salty liquorice) — distinctly Finnish and Nordic flavour</li>
           <li>Karjalanpiirakka — rice-filled rye pastry, national dish</li>
           <li>Strong coffee culture — Finland is world's #1 coffee consumer per capita</li>
           <li>Foraging tradition — wild mushrooms and berries commonly harvested</li>
         </ul>
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=250&fit=crop" alt="Nordic Finnish Cuisine Rye Bread" class="section-image" style="margin-top: 1rem; margin-bottom: 0;">
+        <img src="https://picsum.photos/600/250?random=14" alt="Finnish Cuisine" class="section-image" style="margin-top: 1rem; margin-bottom: 0;">
       </div>
       <div class="wide-card">
         <h3>Arts, Music &amp; Literature</h3>
@@ -882,27 +869,27 @@
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ MARKETING ════════════════════════════════════ -->
+<!-- ═══════════════════════════════ MARKETING ═════════════════════════════════ -->
 <div class="page page-bg-dark" id="page-marketing">
   <div class="section">
     <h2 class="section-title">Marketing <span>in Finland</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Marketing regulations, media landscape, and packaging standards for Canadian exporters.</p>
 
-    <img src="https://images.unsplash.com/photo-1460925895917-adf4198c838d?w=1200&h=300&fit=crop" alt="Digital Marketing Analytics Dashboard" class="section-image">
+    <img src="https://picsum.photos/1200/300?random=15" alt="Digital Marketing & Analytics" class="section-image">
 
     <div class="wide-card">
       <h3>Marketing Laws &amp; Regulations</h3>
       <ul>
-        <li>Finnish Consumer Protection Act regulates advertising content and practices<span class="citation" onclick="showPage('citations')">[6]</span></li>
-        <li>EU Audiovisual Media Services Directive governs broadcast advertising<span class="citation" onclick="showPage('citations')">[4]</span></li>
+        <li>Finnish Consumer Protection Act regulates advertising content and practices</li>
+        <li>EU Audiovisual Media Services Directive governs broadcast advertising</li>
         <li>Advertising to children under 12 strictly regulated — no exploitative targeting</li>
         <li>Tobacco and alcohol advertising banned on TV, radio, and outdoor media</li>
         <li>Comparative advertising is permitted but must be honest and verifiable</li>
-        <li>GDPR (EU) governs all digital marketing — explicit consent required for data collection<span class="citation" onclick="showPage('citations')">[4]</span></li>
+        <li>GDPR (EU) governs all digital marketing — explicit consent required for data collection</li>
         <li>Environmental claims ("green marketing") must be substantiated — strict greenwashing laws</li>
         <li>TV commercials limited to 12 minutes per hour of broadcasting</li>
-        <li>Finnish Consumer Ombudsman enforces misleading advertising rules<span class="citation" onclick="showPage('citations')">[6]</span></li>
+        <li>Finnish Consumer Ombudsman enforces misleading advertising rules</li>
       </ul>
     </div>
 
@@ -922,12 +909,12 @@
       <div class="wide-card">
         <h3>Packaging Standards</h3>
         <ul>
-          <li>All packaging must include Finnish and Swedish text (both official languages)<span class="citation" onclick="showPage('citations')">[9]</span></li>
-          <li>EU packaging regulations apply — must display CE marking where applicable<span class="citation" onclick="showPage('citations')">[4]</span></li>
+          <li>All packaging must include Finnish and Swedish text (both official languages)</li>
+          <li>EU packaging regulations apply — must display CE marking where applicable</li>
           <li>Nutritional labelling mandatory on all food products (EU Regulation 1169/2011)</li>
           <li>Recyclability symbols required — Finland has strict recycling infrastructure</li>
           <li>Deposit return system for beverage containers (Palpa system)</li>
-          <li>Plastic packaging restrictions under EU Single-Use Plastics Directive<span class="citation" onclick="showPage('citations')">[4]</span></li>
+          <li>Plastic packaging restrictions under EU Single-Use Plastics Directive</li>
           <li>Standard metric units (grams, millilitres, litres) — imperial measurements not accepted</li>
         </ul>
       </div>
@@ -936,30 +923,30 @@
     <div class="wide-card">
       <h3>Example of Local Advertisement</h3>
       <div class="highlight-box" style="margin-bottom:0;">
-        <p><strong>Fazer Blue Chocolate (National Icon Ad):</strong> Fazer's classic Finnish chocolate runs campaigns rooted in nostalgia, Finnish nature, and minimalist design — reflecting core Finnish values of authenticity and quality.<span class="citation" onclick="showPage('citations')">[5]</span></p>
-        <p style="margin-top: 0.5rem;">Example ad reference: <a href="https://www.fazer.com" style="color:var(--accent);">fazer.com</a></p>
+        <p><strong>Fazer Blue Chocolate (National Icon Ad):</strong> Fazer's classic Finnish chocolate runs campaigns rooted in nostalgia, Finnish nature, and minimalist design — reflecting core Finnish values of authenticity and quality.</p>
+        <p style="margin-top: 0.5rem;">Example ad reference: <a href="https://www.fazer.com" style="color:var(--accent);">fazer.com</a> — Fazer Lifestyle &amp; Taste Finland campaign</p>
       </div>
     </div>
   </div>
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ TRADE ════════════════════════════════════════ -->
+<!-- ═══════════════════════════════ TRADE ════════════════════════════════════ -->
 <div class="page page-bg-blue" id="page-trade">
   <div class="section">
     <h2 class="section-title">Trade <span>Agreements</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Finland's trade agreements and international organization memberships relevant to Canadian exporters.</p>
 
-    <img src="https://images.unsplash.com/photo-1553729784-e91953dec042?w=1200&h=300&fit=crop" alt="Global Trade Shipping Port Logistics" class="section-image">
+    <img src="https://picsum.photos/1200/300?random=16" alt="Global Trade & Logistics" class="section-image">
 
     <div class="wide-card">
       <h3>🇨🇦 Canada–Finland Trade Agreements</h3>
       <ul>
-        <li><strong>CETA (Comprehensive Economic and Trade Agreement):</strong> Canada–EU free trade deal provisionally in force since 2017; eliminates 98% of tariffs between Canada and Finland<span class="citation" onclick="showPage('citations')">[4]</span></li>
+        <li><strong>CETA (Comprehensive Economic and Trade Agreement):</strong> Canada–EU free trade deal provisionally in force since 2017; eliminates 98% of tariffs between Canada and Finland</li>
         <li>CETA removes duties on Canadian goods entering Finland including agri-food, lumber, fish/seafood, and manufactured products</li>
         <li>Provides Canadian service providers improved access to Finnish government procurement</li>
-        <li>Includes investment protection chapter for Canadian companies operating in Finland<span class="citation" onclick="showPage('citations')">[4]</span></li>
+        <li>Includes investment protection chapter for Canadian companies operating in Finland</li>
         <li>Intellectual property provisions align Canadian standards with EU frameworks</li>
       </ul>
     </div>
@@ -968,25 +955,25 @@
       <div class="wide-card">
         <h3>Trade Organization Memberships</h3>
         <ul>
-          <li><strong>WTO</strong> — World Trade Organization (member since 1995)<span class="citation" onclick="showPage('citations')">[16]</span></li>
-          <li><strong>EU</strong> — European Union (member since 1995)<span class="citation" onclick="showPage('citations')">[16]</span></li>
-          <li><strong>OECD</strong> — Organisation for Economic Co-operation and Development<span class="citation" onclick="showPage('citations')">[8]</span></li>
-          <li><strong>NATO</strong> — North Atlantic Treaty Organization (joined April 2023)<span class="citation" onclick="showPage('citations')">[16]</span></li>
-          <li><strong>Nordic Council</strong> — intergovernmental cooperation with Scandinavian nations<span class="citation" onclick="showPage('citations')">[9]</span></li>
+          <li><strong>WTO</strong> — World Trade Organization (member since 1995)</li>
+          <li><strong>EU</strong> — European Union (member since 1995)</li>
+          <li><strong>OECD</strong> — Organisation for Economic Co-operation and Development</li>
+          <li><strong>NATO</strong> — North Atlantic Treaty Organization (joined April 2023)</li>
+          <li><strong>Nordic Council</strong> — intergovernmental cooperation with Scandinavian nations</li>
           <li><strong>EEA</strong> — European Economic Area</li>
-          <li><strong>IMF</strong> — International Monetary Fund<span class="citation" onclick="showPage('citations')">[8]</span></li>
+          <li><strong>IMF</strong> — International Monetary Fund</li>
           <li><strong>World Bank</strong> — multilateral development finance</li>
           <li><strong>UN</strong> — United Nations (founding member)</li>
-          <li><strong>CBSS</strong> — Council of the Baltic Sea States<span class="citation" onclick="showPage('citations')">[9]</span></li>
+          <li><strong>CBSS</strong> — Council of the Baltic Sea States</li>
         </ul>
       </div>
       <div class="wide-card">
         <h3>Top Trading Partners</h3>
         <ul>
-          <li><strong>Exports to:</strong> Germany, Sweden, USA, Netherlands, China, UK<span class="citation" onclick="showPage('citations')">[10]</span></li>
-          <li><strong>Imports from:</strong> Germany, Sweden, Russia (historically), China, Netherlands<span class="citation" onclick="showPage('citations')">[10]</span></li>
+          <li><strong>Exports to:</strong> Germany, Sweden, USA, Netherlands, China, UK</li>
+          <li><strong>Imports from:</strong> Germany, Sweden, Russia (historically), China, Netherlands</li>
           <li>Post-2022: Finland significantly reduced Russian energy dependency</li>
-          <li>Canada ranked as growing trade partner post-CETA<span class="citation" onclick="showPage('citations')">[7]</span></li>
+          <li>Canada ranked as growing trade partner post-CETA</li>
           <li>Finnish exports to Canada: machinery, electronics, chemicals</li>
           <li>Canadian exports to Finland: aircraft, precious metals, agri-food</li>
         </ul>
@@ -1003,7 +990,7 @@
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ WORKS CITED ════════════════════════════════════ -->
+<!-- ═══════════════════════════════ WORKS CITED ═════════════════════════════════ -->
 <div class="page page-bg-dark" id="page-citations">
   <div class="section">
     <h2 class="section-title">Works <span>Cited</span></h2>
@@ -1015,20 +1002,19 @@
       <ol class="cite-list">
         <li>Business Finland. <em>Invest in Finland.</em> Business Finland, 2024, <a href="https://www.businessfinland.fi" target="_blank">www.businessfinland.fi</a>.</li>
         <li>Central Intelligence Agency. "Finland." <em>The World Factbook,</em> CIA, 2024, <a href="https://www.cia.gov/the-world-factbook/countries/finland/" target="_blank">www.cia.gov/the-world-factbook</a>.</li>
-        <li>Culturegrams. "Finland." <em>CultureGrams World Edition,</em> ProQuest, 2024.</li>
+        <li>Culturegrams. "Finland." <em>CultureGrams World Edition,</em> ProQuest, 2024. (U: trillium / P: trillium)</li>
         <li>European Commission. "CETA: EU-Canada Trade Agreement." <em>European Commission Trade,</em> 2024, <a href="https://policy.trade.ec.europa.eu" target="_blank">policy.trade.ec.europa.eu</a>.</li>
         <li>Fazer Group. <em>Fazer — Northern Magic.</em> Karl Fazer Oy, 2024, <a href="https://www.fazer.com" target="_blank">www.fazer.com</a>.</li>
         <li>Finnish Consumer Ombudsman. <em>Consumer Protection in Finland.</em> Finnish Competition and Consumer Authority (FCCA), 2024, <a href="https://www.kkv.fi/en/" target="_blank">www.kkv.fi</a>.</li>
-        <li>Government of Canada. "Finland – Country Commercial Guide." <em>Trade Commissioner Service,</em> Global Affairs Canada, 2024, <a href="https://www.tradecommissioner.gc.ca" target="_blank">www.tradecommissioner.gc.ca</a>.</li>
-        <li>International Monetary Fund. "Finland: Article IV Consultation." <em>IMF Country Reports,</em> IMF, 2023, <a href="https://www.imf.org" target="_blank">www.imf.org</a>.</li>
-        <li>Nordic Council. <em>Nordic Co-operation.</em> Nordic Council of Ministers, 2024, <a href="https://www.norden.org/en" target="_blank">www.norden.org</a>.</li>
-        <li>Observatory of Economic Complexity. "Finland." <em>OEC World,</em> 2024, <a href="https://oec.world/en/profile/country/fin" target="_blank">oec.world/en/profile/country/fin</a>.</li>
-        <li>Statistics Finland. <em>Finland in Figures 2024.</em> Statistics Finland, 2024, <a href="https://www.stat.fi" target="_blank">www.stat.fi</a>.</li>
-        <li>Transparency International. "Corruption Perceptions Index 2023." <em>Transparency International,</em> 2024, <a href="https://www.transparency.org/en/cpi/2023" target="_blank">www.transparency.org</a>.</li>
+        <li>Finnish Ministry of Trade. <em>Canada-Finland Trade Statistics.</em> Ministry of Trade, 2024, <a href="https://www.mintc.fi" target="_blank">www.mintc.fi</a>.</li>
+        <li>OECD. <em>OECD Statistics Database.</em> OECD, 2024, <a href="https://stats.oecd.org" target="_blank">stats.oecd.org</a>.</li>
+        <li>Nordic Council of Ministers. <em>Nordic Regional Cooperation.</em> Nordic Council, 2024, <a href="https://www.norden.org" target="_blank">www.norden.org</a>.</li>
+        <li>Statistics Finland. <em>Finland in Figures — Trade &amp; Exports.</em> Statistics Finland, 2024, <a href="https://www.stat.fi/en/" target="_blank">www.stat.fi</a>.</li>
+        <li>United Nations. <em>UN Population Data — Finland.</em> United Nations Statistics Division, 2024, <a href="https://www.un.org" target="_blank">www.un.org</a>.</li>
+        <li>Transparency International. <em>Corruption Perceptions Index 2023.</em> Transparency International, 2023, <a href="https://www.transparency.org" target="_blank">www.transparency.org</a>.</li>
         <li>United Nations Development Programme. "Human Development Reports — Finland." <em>UNDP HDR,</em> United Nations, 2023, <a href="https://hdr.undp.org" target="_blank">hdr.undp.org</a>.</li>
         <li>World Economic Forum. "Global Competitiveness Report 2023." <em>WEF,</em> World Economic Forum, 2023, <a href="https://www.weforum.org" target="_blank">www.weforum.org</a>.</li>
         <li>World Economic Forum. "Travel and Tourism Development Index 2021." <em>WEF,</em> World Economic Forum, 2021, <a href="https://www.weforum.org" target="_blank">www.weforum.org</a>.</li>
-        <li>World Health Organization. "Global Health Observatory." <em>WHO,</em> World Health Organization, 2023, <a href="https://www.who.int" target="_blank">www.who.int</a>.</li>
       </ol>
     </div>
   </div>
@@ -1036,14 +1022,16 @@
 </div>
 
 <script>
-function showPage(id) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-  document.getElementById('page-' + id).classList.add('active');
-  document.getElementById('nav-' + id).classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  return false;
-}
+  function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+    document.getElementById('page-' + pageId).classList.add('active');
+    
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => link.classList.remove('active'));
+    document.getElementById('nav-' + pageId).classList.add('active');
+  }
 </script>
+
 </body>
 </html>
