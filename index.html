@@ -160,6 +160,46 @@
     margin: 1rem 0 2.5rem;
   }
 
+  /* IMAGE STYLES */
+  .section-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 2rem 0;
+    border: 1px solid rgba(200,168,75,0.2);
+    opacity: 0.9;
+    transition: opacity 0.3s;
+  }
+  .section-image:hover { opacity: 1; }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .image-card {
+    background: #0f0f1a;
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+    border-radius: 4px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .image-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(200,168,75,0.2); }
+  .image-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  .image-caption {
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: rgba(245,245,240,0.75);
+    text-align: center;
+  }
+
   /* SNAPSHOT GRID */
   .snapshot-grid {
     display: grid;
@@ -395,7 +435,7 @@
   <a href="#" onclick="showPage('citations')" id="nav-citations">Works Cited</a>
 </nav>
 
-<!-- ═══════════════════════════════ SNAPSHOT ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ SNAPSHOT ════════════════════════════════ -->
 <div class="page active page-bg-blue" id="page-snapshot">
   <div class="hero">
     <div class="hero-flag">🇫🇮</div>
@@ -408,6 +448,8 @@
   <div class="section">
     <h2 class="section-title">Country <span>Snapshot</span></h2>
     <div class="section-line"></div>
+
+    <img src="https://images.unsplash.com/photo-1549887534-7f8f2b1b8b5f?w=1200&h=300&fit=crop" alt="Helsinki Waterfront" class="section-image">
 
     <div class="snapshot-grid">
       <div class="snap-card">
@@ -483,6 +525,7 @@
           <li>Midnight Sun phenomenon in summer above Arctic Circle</li>
           <li>Heavy snowfall in most regions November–March</li>
         </ul>
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=250&fit=crop" alt="Finnish Winter Landscape" class="section-image" style="margin-top: 1rem; margin-bottom: 0;">
       </div>
       <div class="wide-card">
         <h3>Government Structure</h3>
@@ -527,8 +570,8 @@
     <div class="wide-card" style="margin-top:0;">
       <h3>Map & Region</h3>
       <div class="map-placeholder">
-        <span>🗺️</span>
-        <strong>Northern Europe — Scandinavia</strong>
+        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=200&fit=crop" alt="Nordic Map Region" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+        <strong style="margin-top: 1rem; display: block;">Northern Europe — Scandinavia</strong>
         <p>Finland borders Sweden (west), Norway (north), Russia (east), and the Gulf of Finland (south).<br>Area: 338,000 km² — roughly 3× the size of Ontario's southern region.</p>
       </div>
     </div>
@@ -536,12 +579,14 @@
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ ADVANTAGES ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ ADVANTAGES ════════════════════════════════ -->
 <div class="page page-bg-dark" id="page-advantages">
   <div class="section">
     <h2 class="section-title">Advantages &amp; <span>Challenges</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Key business considerations for Canadian exporters entering the Finnish market.</p>
+
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=300&fit=crop" alt="Modern Business Environment" class="section-image">
 
     <div class="wide-card">
       <h3>Advantages of Doing Business in Finland</h3>
@@ -572,6 +617,21 @@
       </ul>
     </div>
 
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1581092191956-8155fe634e69?w=400&h=200&fit=crop" alt="Forestry & Pulp Industry">
+        <div class="image-caption">Forestry & Pulp Industry</div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1581092916981-8022b59ce890?w=400&h=200&fit=crop" alt="Tech Innovation">
+        <div class="image-caption">Tech Innovation Hub</div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=200&fit=crop" alt="Renewable Energy">
+        <div class="image-caption">Clean Energy Focus</div>
+      </div>
+    </div>
+
     <div class="wide-card">
       <h3>Challenges for Canadian Exporters/Importers</h3>
       <ul>
@@ -590,12 +650,14 @@
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ SOCIAL ISSUES ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ SOCIAL ISSUES ════════════════════════════════ -->
 <div class="page page-bg-blue" id="page-social">
   <div class="section">
     <h2 class="section-title">Social <span>Issues</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Ethics and social considerations relevant to Finland's labour and business environment.</p>
+
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=300&fit=crop" alt="Workplace & Safety" class="section-image">
 
     <div class="three-col">
       <div class="wide-card">
@@ -657,12 +719,14 @@
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ OPPORTUNITIES ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ OPPORTUNITIES ════════════════════════════════ -->
 <div class="page page-bg-dark" id="page-trends">
   <div class="section">
     <h2 class="section-title">Opportunities <span>&amp; Trends</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Current trends shaping Finland's economy — and the trade opportunities they create for Canadian businesses.</p>
+
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=300&fit=crop" alt="Green Energy & Innovation" class="section-image">
 
     <div class="highlight-box">
       <p>Remember: <strong>Opportunities come from trends.</strong> Each trend below represents a potential entry point for Canadian exporters into the Finnish market.</p>
@@ -680,6 +744,21 @@
         <li><strong>Critical Minerals Demand:</strong> Growing EV industry creating demand for cobalt, nickel, and lithium</li>
         <li><strong>Gaming &amp; Entertainment:</strong> Finland's gaming industry growing 15%+ annually</li>
       </ul>
+    </div>
+
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=200&fit=crop" alt="Wind Energy">
+        <div class="image-caption">Renewable Energy Trends</div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" alt="AI & Digital">
+        <div class="image-caption">AI & Digital Economy</div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1538481143081-26431dbf91c2?w=400&h=200&fit=crop" alt="Gaming Industry">
+        <div class="image-caption">Gaming & Tech Innovation</div>
+      </div>
     </div>
 
     <div class="two-col">
@@ -711,12 +790,14 @@
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ CULTURE ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ CULTURE ════════════════════════════════════ -->
 <div class="page page-bg-blue" id="page-culture">
   <div class="section">
     <h2 class="section-title">Finnish <span>Culture</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Understanding Finnish culture is essential for successful business and social relationships.</p>
+
+    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=300&fit=crop" alt="Finnish Sauna Culture" class="section-image">
 
     <div class="do-dont-grid" style="margin-bottom: 1.5rem;">
       <div class="wide-card do-card">
@@ -768,6 +849,7 @@
           <li>Strong coffee culture — Finland is world's #1 coffee consumer per capita</li>
           <li>Foraging tradition — wild mushrooms and berries commonly harvested</li>
         </ul>
+        <img src="https://images.unsplash.com/photo-1564193565185-dea1bbbf1d81?w=600&h=250&fit=crop" alt="Finnish Cuisine" class="section-image" style="margin-top: 1rem; margin-bottom: 0;">
       </div>
       <div class="wide-card">
         <h3>Arts, Music &amp; Literature</h3>
@@ -785,12 +867,14 @@
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ MARKETING ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ MARKETING ════════════════════════════════════ -->
 <div class="page page-bg-dark" id="page-marketing">
   <div class="section">
     <h2 class="section-title">Marketing <span>in Finland</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Marketing regulations, media landscape, and packaging standards for Canadian exporters.</p>
+
+    <img src="https://images.unsplash.com/photo-1460925895917-adf4198c838d?w=1200&h=300&fit=crop" alt="Digital Marketing & Analytics" class="section-image">
 
     <div class="wide-card">
       <h3>Marketing Laws &amp; Regulations</h3>
@@ -837,20 +921,22 @@
     <div class="wide-card">
       <h3>Example of Local Advertisement</h3>
       <div class="highlight-box" style="margin-bottom:0;">
-        <p><strong>Fazer Blue Chocolate (National Icon Ad):</strong> Fazer's classic Finnish chocolate runs campaigns rooted in nostalgia, Finnish nature, and minimalist design — reflecting core Finnish values. Their TV spots typically feature forests, lakes, and family — not celebrity endorsements. This reflects Finnish advertising culture: understated, emotional, and authentic rather than loud or promotional. <br><br>
-        Example ad reference: <a href="https://www.fazer.com" style="color:var(--accent);">fazer.com</a> — Fazer Lifestyle &amp; Taste Finland campaign</p>
+        <p><strong>Fazer Blue Chocolate (National Icon Ad):</strong> Fazer's classic Finnish chocolate runs campaigns rooted in nostalgia, Finnish nature, and minimalist design — reflecting core Finnish values of authenticity and quality.</p>
+        <p style="margin-top: 0.5rem;">Example ad reference: <a href="https://www.fazer.com" style="color:var(--accent);">fazer.com</a> — Fazer Lifestyle &amp; Taste Finland campaign</p>
       </div>
     </div>
   </div>
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ TRADE ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ TRADE ════════════════════════════════════════ -->
 <div class="page page-bg-blue" id="page-trade">
   <div class="section">
     <h2 class="section-title">Trade <span>Agreements</span></h2>
     <div class="section-line"></div>
     <p class="section-intro">Finland's trade agreements and international organization memberships relevant to Canadian exporters.</p>
+
+    <img src="https://images.unsplash.com/photo-1553729784-e91953dec042?w=1200&h=300&fit=crop" alt="Global Trade & Logistics" class="section-image">
 
     <div class="wide-card">
       <h3>🇨🇦 Canada–Finland Trade Agreements</h3>
@@ -902,7 +988,7 @@
   <footer>Finland Country Profile · BBB4M1 · Sources listed in Works Cited</footer>
 </div>
 
-<!-- ═══════════════════════════════ WORKS CITED ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ WORKS CITED ════════════════════════════════════ -->
 <div class="page page-bg-dark" id="page-citations">
   <div class="section">
     <h2 class="section-title">Works <span>Cited</span></h2>
@@ -913,20 +999,20 @@
       <h3>References</h3>
       <ol class="cite-list">
         <li>Business Finland. <em>Invest in Finland.</em> Business Finland, 2024, <a href="https://www.businessfinland.fi" target="_blank">www.businessfinland.fi</a>.</li>
-        <li>Central Intelligence Agency. "Finland." <em>The World Factbook,</em> CIA, 2024, <a href="https://www.cia.gov/the-world-factbook/countries/finland/" target="_blank">www.cia.gov/the-world-factbook/countries/finland/</a>.</li>
+        <li>Central Intelligence Agency. "Finland." <em>The World Factbook,</em> CIA, 2024, <a href="https://www.cia.gov/the-world-factbook/countries/finland/" target="_blank">www.cia.gov/the-world-factbook</a>.</li>
         <li>Culturegrams. "Finland." <em>CultureGrams World Edition,</em> ProQuest, 2024. (U: trillium / P: trillium)</li>
-        <li>European Commission. "CETA: EU-Canada Trade Agreement." <em>European Commission Trade,</em> 2024, <a href="https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/canada_en" target="_blank">policy.trade.ec.europa.eu</a>.</li>
+        <li>European Commission. "CETA: EU-Canada Trade Agreement." <em>European Commission Trade,</em> 2024, <a href="https://policy.trade.ec.europa.eu" target="_blank">policy.trade.ec.europa.eu</a>.</li>
         <li>Fazer Group. <em>Fazer — Northern Magic.</em> Karl Fazer Oy, 2024, <a href="https://www.fazer.com" target="_blank">www.fazer.com</a>.</li>
         <li>Finnish Consumer Ombudsman. <em>Consumer Protection in Finland.</em> Finnish Competition and Consumer Authority (FCCA), 2024, <a href="https://www.kkv.fi/en/" target="_blank">www.kkv.fi</a>.</li>
         <li>Government of Canada. "Finland – Country Commercial Guide." <em>Trade Commissioner Service,</em> Global Affairs Canada, 2024, <a href="https://www.tradecommissioner.gc.ca" target="_blank">www.tradecommissioner.gc.ca</a>.</li>
-        <li>International Monetary Fund. "Finland: Article IV Consultation." <em>IMF Country Reports,</em> IMF, 2023, <a href="https://www.imf.org/en/Publications/CR/Issues/2023" target="_blank">www.imf.org</a>.</li>
+        <li>International Monetary Fund. "Finland: Article IV Consultation." <em>IMF Country Reports,</em> IMF, 2023, <a href="https://www.imf.org" target="_blank">www.imf.org</a>.</li>
         <li>Nordic Council. <em>Nordic Co-operation.</em> Nordic Council of Ministers, 2024, <a href="https://www.norden.org/en" target="_blank">www.norden.org</a>.</li>
         <li>Observatory of Economic Complexity. "Finland." <em>OEC World,</em> 2024, <a href="https://oec.world/en/profile/country/fin" target="_blank">oec.world/en/profile/country/fin</a>.</li>
-        <li>Statistics Finland. <em>Finland in Figures 2024.</em> Statistics Finland, 2024, <a href="https://www.stat.fi/tup/suoluk/index_en.html" target="_blank">www.stat.fi</a>.</li>
+        <li>Statistics Finland. <em>Finland in Figures 2024.</em> Statistics Finland, 2024, <a href="https://www.stat.fi" target="_blank">www.stat.fi</a>.</li>
         <li>Transparency International. "Corruption Perceptions Index 2023." <em>Transparency International,</em> 2024, <a href="https://www.transparency.org/en/cpi/2023" target="_blank">www.transparency.org</a>.</li>
         <li>United Nations Development Programme. "Human Development Reports — Finland." <em>UNDP HDR,</em> United Nations, 2023, <a href="https://hdr.undp.org" target="_blank">hdr.undp.org</a>.</li>
-        <li>World Economic Forum. "Global Competitiveness Report 2023." <em>WEF,</em> World Economic Forum, 2023, <a href="https://www.weforum.org/reports/global-competitiveness-report-2019" target="_blank">www.weforum.org</a>.</li>
-        <li>World Economic Forum. "Travel and Tourism Development Index 2021." <em>WEF,</em> World Economic Forum, 2021, <a href="https://www.weforum.org/reports/travel-and-tourism-development-index-2021" target="_blank">www.weforum.org</a>.</li>
+        <li>World Economic Forum. "Global Competitiveness Report 2023." <em>WEF,</em> World Economic Forum, 2023, <a href="https://www.weforum.org" target="_blank">www.weforum.org</a>.</li>
+        <li>World Economic Forum. "Travel and Tourism Development Index 2021." <em>WEF,</em> World Economic Forum, 2021, <a href="https://www.weforum.org" target="_blank">www.weforum.org</a>.</li>
       </ol>
     </div>
   </div>
